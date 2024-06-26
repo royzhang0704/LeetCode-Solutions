@@ -20,5 +20,5 @@ class Solution:
 
 """
 time:O(n)
-sapce:O(n)
+space:O(n)
 """
