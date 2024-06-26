@@ -1,15 +1,19 @@
-class Solution {
-public:
-    vector<int> inorderTraversal(TreeNode* root) {
-       vector<int> result;
-       if(root==nullptr){
-           return result;
-       }
-       vector<int> left=inorderTraversal(root->left);
-       result.insert(result.end(),left.begin(),left.end());
-       result.push_back(root->val);
-       vector<int> right=inorderTraversal(root->right);
-       result.insert(result.end(),right.begin(),right.end());
-       return result;
-    }
-};
+class Solution:
+    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        result=[]
+        self.inorder(root,result)
+        return result
+
+
+    def inorder(self,root,result):
+        if root is None:
+            return 
+        self.inorder(root.left,result)
+        result.append(root.val)
+        self.inorder(root.right,result)
+
+
+“”“
+time:O(n) 每個node都訪問一次 
+space:O(n) 二元樹可以為skew 複雜度取決於遞迴深度即樹的高度 worst case:(n) 
+”“”
