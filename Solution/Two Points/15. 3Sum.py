@@ -1,5 +1,5 @@
 """
-time:O(n^2)
+time:O(n^2) for 迴圈共O(n) 環圈裡面每個元素需跑n次指針 共O(n*n)
 space:O(n)
 """
 
