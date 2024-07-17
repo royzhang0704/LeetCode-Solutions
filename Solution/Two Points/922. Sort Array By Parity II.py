@@ -1,3 +1,7 @@
+"""
+time:O(n):利用odd與even兩個指針個跑O(n/2)次 共O(n)
+space:O(1)沒有額外創建array 
+"""
 class Solution:
     def sortArrayByParityII(self, nums: List[int]) -> List[int]:
         even=0
