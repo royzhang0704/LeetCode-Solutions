@@ -1,6 +1,6 @@
 class Solution:
     """
-    time:O(n)
+    time:O(logn)
     space:O(1)
     """
     def mySqrt(self, x: int) -> int:
