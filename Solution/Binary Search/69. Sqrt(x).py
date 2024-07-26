@@ -1,4 +1,8 @@
 class Solution:
+    """
+    time:O(n)
+    space:O(1)
+    """
     def mySqrt(self, x: int) -> int:
         if x<2:
             return x
