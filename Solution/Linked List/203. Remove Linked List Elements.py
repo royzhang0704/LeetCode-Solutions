@@ -11,9 +11,10 @@ class Solution:
     def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
         dummy_node=ListNode(next=head)
         current=dummy_node
-        while current.next!=None:
+        while current.next is not None:
             if current.next.val==val:
                 current.next=current.next.next
             else:
                 current=current.next
         return dummy_node.next
+        
