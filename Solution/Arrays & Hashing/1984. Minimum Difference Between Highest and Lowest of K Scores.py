@@ -3,7 +3,7 @@ class Solution:
 
         """
         time:O(nlogn) 對數組排序需O(nlogn) 之後在遍歷len(nums)-k+1次後 找出k位學生中差的最小值需要O(n)
-        space:O(l) 對原術組進行排序 用result 紀錄當前最小值
+        space:O(1) 對原術組進行排序 用result 紀錄當前最小值
         
         """
         #edge case 只有一位的話自己是最大值同時也是最小值 diff=0
